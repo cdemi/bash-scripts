@@ -8,8 +8,7 @@ curl -fsSL get.docker.com | bash
 apt-get install -y docker-compose
 
 #Set Hostname
-echo What is full hostname?
-read hostname
+read -p "What is full hostname?" hostname
 echo $hostname > /etc/hostname
 
 reboot
