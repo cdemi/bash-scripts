@@ -10,5 +10,4 @@ apt-get install -y docker-compose
 #Set Hostname
 read -p "What is the machine's full hostname? " hostname
 echo $hostname > /etc/hostname
-
-reboot
+hostname $hostname
