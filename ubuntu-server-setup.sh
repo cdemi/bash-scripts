@@ -1,7 +1,7 @@
 #!/bin/bash
 apt-get update
 apt-get dist-upgrade -y
-apt-get install -y mosh tmux nano
+apt-get install -y mosh tmux nano htop bmon
 
 #Install Docker
 curl -fsSL get.docker.com | bash
