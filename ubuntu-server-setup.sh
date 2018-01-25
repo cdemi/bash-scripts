@@ -1,7 +1,11 @@
 #!/bin/bash
-apt-get update
+curl -sL https://deb.nodesource.com/setup_9.x | bash -
 apt-get dist-upgrade -y
-apt-get install -y mosh tmux nano htop bmon
+apt-get install -y mosh tmux nano htop bmon curl python-pip python-dev python-setuptools build-essential traceroute nodejs
+
+pip install --upgrade pip virtualenv youtube
+
+npm install --global speedtest-net
 
 #Install Docker
 curl -fsSL get.docker.com | bash
